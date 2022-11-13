@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ランダム単語生成</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-1.12.4.min.js"></script>
+    <script src="program_length.js"></script>
+</head>
+<body>
+    <div class = "header">
+        <h1>ランダム単語生成ツール</h1>
+    </div>
+    <div class = "main">
+        <div id = "displayWord">
+            here displays generated word.
+        </div>
+        <div id = "symbolPronun">
+            /sɑmplə/
+        </div>
+        <div class = "settings">
+            <form id="form" action="">
+                語根の文字数:
+                <input type="number" name="wordLength" id="wordLength" min="3" max="9">
+                <br>
+                オプション:
+                先頭の文字を子音にする<input type="checkbox" class = "option" name="" id="consonantsOption">
+                先頭の文字を母音にする<input type="checkbox" class = "option" name="" id="vowelOption">
+                <h3>接頭辞</h3>
+                <p>
+                    la :<input type="checkbox" class = "profix" name="var" id="la">
+                    de:<input type="checkbox" class = "profix" name="var" id="de">
+                </p>
+                <h3>接尾辞</h3>
+                <p>
+                    -ia :<input type="checkbox" class = "prefix" name="var" id="ia">
+                    -burg :<input type="checkbox" class = "prefix" name="var" id="burg">
+                    -stan :<input type="checkbox" class = "prefix" name="var" id="stan">
+                </p>
+            </form>
+            <button id = "gen">generate</button>
+        </div>
+        <div id = "footer">
+        </div>
+    </div>
+</body>
+</html>
